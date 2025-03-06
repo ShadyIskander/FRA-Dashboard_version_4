@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Dashboard</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #E8DAB2;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: #2c3e50;
+            font-family: "Merriweather", serif;
+            font-size: 40px;
+            font-weight: bold;
+            color: #2c3e50;
+            text-align: center;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: 1px;
+        }
+        #logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 150px; /* Adjust as needed */
+            height: auto;
+            z-index: 10;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column; /* Stack children vertically */
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
+            height: 100vh;
+        }
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .button-container {
+            display: column;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 600px;
+            width: 50%;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 50%;
+        }
+        .button-container a {
+            background: #4F6D7A;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s, transform 0.2s;
+            display: block;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .button-container a:hover {
+            background: #2c3e50;
+            transform: scale(1.05);
+        }
+        .back-button {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 40px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">  منظور الفروع</div>
+        <img id="logo" src="logo.png" alt="Company Logo">
+        <div class="button-container">
+            <a href="LOSS_RATIOS_NON_LIFE_AR.html"> معدل الخسائر </a>
+            <a href="EXPENSES_RATIOS_NON_LIFE_AR.html"> نسب مصاريف التأمين</a>
+            <a href="COMBINED_RATIOS_NON_LIFE_AR.html"> معدل التكلفة الكلية</a>
+            <a href="RETENTION_RATIOS_NON_LIFE_AR.html"> نسبة الاحتفاظ</a>
+            <a href="PROFITABILITY_RATIO_NON_LIFE_AR.html"> نسبة ربحية التأمين</a>
+        </div>
+            <a href="Non_life_AR.html" class="back-button">⬅ الرجوع</a>
+    </div>
+</body>
+</html>
